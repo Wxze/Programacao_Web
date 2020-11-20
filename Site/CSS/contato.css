@@ -1,0 +1,19 @@
+/*Nome: Gabriel Jose da Silva dos Santos     Código: 834846*/
+#cadastro{
+    font-family: 'Optima', sans-serif;
+    text-align: justify;
+    display: inline;
+    padding: 0.5%;
+    margin: 0.9%;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    box-shadow: black 4px 3px 7px;
+    transition: 0.8s;
+}
+
+#cadastro:hover{
+    color: #000000;
+    border: 2px solid black;
+    background-color: white;
+}
