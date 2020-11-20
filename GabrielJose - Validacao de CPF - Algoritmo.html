@@ -1,0 +1,62 @@
+
+    <!-- Aluno: Gabriel Jose da Silva dos Santos     Código: 834846 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-- VALIDAR CPF --</title>
+    
+</head>
+<body>
+    <br><br><br>
+    <form>
+        <div align="center" style="border: 1px solid black;">
+            <h1>Validação de CPF</h1><br><br><br>
+            <button onclick="cpf()">Consultar</button><br><br>
+            <br><br>
+        </div>
+    </form>
+</body>
+
+<script type="text/javascript"> 
+    function cpf(){
+        var cpf, x, digito1, digito2, soma1=0, soma2=0, multipli1=10, multipli2=11, resto, condic1, condic2;
+
+       cpf = window.prompt("Informe o CPF que deseja validar");
+
+       for(x=0;x<=8;x++){
+            soma1 += parseInt(cpf.charAt(x)) * (multipli1);
+            multipli1--;
+       }
+
+       if((soma1 % 11) < 2){
+            digito1 = 0;
+       }else{
+            digito1 = 11 - (soma1 % 11);
+       }
+
+       for(x=0;x<=9;x++){
+            soma2 += parseInt(cpf.charAt(x)) * (multipli2);
+            multipli2--;
+       }
+
+       if((soma2 % 11) < 2){
+            digito2 = 0;
+       }else{
+            digito2 = 11 - (soma2 % 11);
+       }
+
+       condic1 = parseInt(cpf.charAt(9));
+       condic2 = parseInt(cpf.charAt(10));
+
+       if(digito1 == condic1 && digito2 == condic2){
+           window.alert("CPF válido");
+       }else{
+           window.alert("CPF inválido");
+       }
+    }
+</script>
+
+</html>
