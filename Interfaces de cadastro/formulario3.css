@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(to right, white, #474a51);
+}
+form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: black;
+}
