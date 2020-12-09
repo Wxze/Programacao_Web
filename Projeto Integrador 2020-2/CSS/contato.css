@@ -1,0 +1,18 @@
+/*centralização da pagina*/
+#principal{
+    width: 800px;
+    margin: auto;
+    background: white;
+}
+/*estilização da barra guia superior*/
+#home{
+    background-color:rgba(255, 153, 0, 0.596);
+    margin: auto;
+    text-align: center ;
+    width: 500px;
+    padding: 10px;
+}
+/*aumento da fonte do titulo*/
+h1{
+    font-size: 25px;
+}

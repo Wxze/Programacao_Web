@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História e Cultura Afro-brasileira, Africana e Indígena</title>
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+
+    <!-- Função checa: exibir mensagem obrigatoria caso o usuario não escreva quando clicar nos quadrados de resposta
+        Funcao1: aparece uma caixa de mensagem ao enviar o formulario
+    -->
+    <script language="Javascript">
+        function checa(){
+        d = document.getElementById("ctn");
+        campo = document.getElementById("abc");
+        if (campo.value=="")
+            d.innerText="Este campo é obrigatório";
+            else
+            d.innerText=" ";
+        }
+
+        function checa2(){
+        d = document.getElementById("ctn2");
+        campo = document.getElementById("abc2");
+        if (campo.value=="")
+            d.innerText="Este campo é obrigatório";
+            else
+            d.innerText=" ";
+        }
+
+        function funcao1(){
+            
+             alert("Mensagem enviada!  [Campos são obrigatórios] ");
+        }
+
+    </script>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        #header{
+            margin: auto;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            font-size: 6vmin;
+            text-align: center;
+            padding: 3vh;
+            background-color: #FFBF00;
+        }
+
+        #navbar{
+            margin: auto;
+            margin-top: 0.6vh;
+            padding: 0.1vmin;
+            background-color: black;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        a:hover{
+            background-color: #FFBF00;
+            border-radius: 3vmin;
+            color: #31383F;
+            transition: 0.6s;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        #content{
+            width: 65vw;
+            margin: auto;
+            text-align: justify;
+            text-justify: auto;
+            font-size: 2vmin;
+            margin-top: 5vmin;
+            margin-bottom: 5vmin;
+        }
+
+        #footer{
+            background-color: black;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            padding-top: 0.5vmin;
+            padding-bottom: 0.5vmin;
+            color: white;
+            font-size: 1.5vmin;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div id="header">
+            <b>História e Cultura Africana</b>
+        </div>
+
+        <div id="navbar">
+            <ul style="padding: 0; margin: 1vmin; text-align: center;">
+                <a href="index.html"><li style="display: inline; font-size: 2.5vmin; padding: 0.7vmin; margin: auto; color: white;">Pagina principal</li></a>
+                <a href="africana.html"><li style="display: inline; font-size: 2.5vmin; padding: 0.7vmin; margin: 1vmin; color: white;">Africana</li></a>
+                <a href="afrobrasileira.html"><li style="display: inline; font-size: 2.5vmin; padding: 0.7vmin; margin: 1vmin; color: white;">Afro-brasileira</li></a>
+                <a href="indigena.html"><li style="display: inline; font-size: 2.5vmin; padding: 0.7vmin; margin: 1vmin; color: white;">Indígena</li></a>
+                <a href="contato.html"><li style="display: inline; font-size: 2.5vmin; padding: 0.7vmin; margin: 1vmin; color: white;">Contato</li></a>
+            </ul>
+        </div>
+    </header>
+        
+    <main>
+        <div id="content">
+            <div id="principal">
+                <h1>Entre em contato conosco</h1><hr>
+                E-mail para contato: xxxxxxxxx@xxx.xx
+                <h2>Nos mande uma mensagem para melhorar o site</h2><hr>
+        
+                <!--menu para enviar a mensagem, feito com javascript -->
+                <form name=form1>
+                    <pre>
+        Nome:   <input name="nome" id="abc" required="true" onblur="checa()" type="text"><div style="color: red; display: inline;" id="ctn"></div>
+        E-mail: <input name="sobrenome" required="true"  type="text"id="abc2" onblur="checa2()"><div style="color: red; display: inline;" id="ctn2"></div>
+                    </pre> 
+                    
+                    <label for="msg">Mensagem:</label><p>
+                    <textarea id="msg" rows="5" cols="33" required="true"   ></textarea>
+                    <p>
+                    <input type="submit" onclick="funcao1()">
+                        <hr>
+                        
+                    </form>
+            </div>
+            
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer">
+            Projeto Integrador - 2ª Etapa Engenharia de Software - UNAERP - 2020/2
+        </div>
+    </footer>
+</body>
+</html>
