@@ -1,0 +1,86 @@
+<!--
+    Aluno: Gabriel Jose da Silva dos Santos
+    RA: 834846
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinked - Controle de multas</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/estrutura.css">
+</head>
+<body>
+    <div class="upperbar">
+        Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
+        <div style="display: inline;">
+            <button class="bt1" style="float: right;" onclick="sair()">Sair</button>
+        </div>
+    </div>
+    <img id="logo" src="../../Multimídia/Imagens/logo_blinked_169.png">
+
+    <hr style="background-color: #043F45; width: 100%; height: 0.5vmin; border: 0;">
+
+    <nav>
+        <div class="navbar">
+            <ul class="navlist">
+                <a href="visualizarmultas.html"><li class="navopt">Consultar multas</li></a>
+                <a href="aplicarmulta.html"><li class="navopt">Aplicar multa</li></a>
+                <a href="condutores.html"><li class="navopt">Condutores</li></a>
+                <a href="veiculos.html"><li class="navopt">Veículos</li></a>
+                <a href="policiais.html"><li class="navopt">Policiais</li></a>
+                <a href="infracoes.html"><li class="navopt">Infrações</li></a>
+                <a href="recursos.html"><li class="navopt">Gerir recursos de multa</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="conteudo">
+            <div class="titulo">
+                Consultar multas
+            </div>
+            <div class="formulario" style="text-align: center;">
+                <!-- <form> -->
+                    <input class="input1" id="cpf" type="number" minlength="11" maxlength="11" placeholder="CPF" value=""><br><br>
+                    <button class="bt2" onclick="consulta()">Consultar</button><br><br>
+                <!-- </form> -->
+                <div id="multas" style="text-align: center;"><br>
+                    <!-- <table class="table1" style="margin-left: auto; margin-right: auto;">
+                        <tr class="tr1">
+                            <th class="th1">Número da multa</th>
+                            <th class="th1">Placa</th>
+                            <th class="th1">Data</th>
+                            <th class="th1">Hora</th>
+                            <th class="th1">Policial</th>
+                            <th class="th1">Infração</th>
+                            <th class="th1">Situção</th>
+                            <th class="th1">Recurso</th>
+                        </tr>
+                        <tr class="tr1">
+                            <td class="td1">1124</td>
+                            <td class="td1">ABC-1234</td>
+                            <td class="td1">11/12/2020</td>
+                            <td class="td1">11:11</td>
+                            <td class="td1">212334</td>
+                            <td class="td1">516-91</td>
+                            <td class="td1">Aguardando pagamento</td>
+                            <td class="td1"><button class="bt2" onclick="recurso()">Clique aqui</button></td>
+                        </tr>
+                    </table> -->
+                    <br><br>
+                </div>
+            </div>
+        </div><br><br>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            Exame Programação Web 1 - UNAERP - Powered by: Gabriel Jose da Silva dos Santos RA: 834846
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../JAVASCRIPT/geral.js"></script>
+    <script type="text/javascript" src="../JAVASCRIPT/visualizarmultas.js"></script>
+</body>
+</html>

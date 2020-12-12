@@ -1,0 +1,117 @@
+<!--
+    Aluno: Gabriel Jose da Silva dos Santos
+    RA: 834846
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinked - Controle de multas</title>
+    <script type="text/javascript" src="../JAVASCRIPT/index.js"></script>
+    <style>
+
+        html, body{height: 100%;}
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #90D8D2;
+        }
+
+        #upperbar{
+            height: 3vmin;
+            margin: auto;
+            background-color: #043F45;
+            color: #F7F6F1;
+            font-size: 2vmin;
+            padding: 0.5vmin;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 1vmin;
+        }   
+    
+        #logo{
+            position: relative;
+            width: 40%;
+            margin-left: 30%;
+        }
+
+        #divlogin{
+            text-align: center;
+            font-size: 3vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #043F45;
+        }
+
+        input.formatar{
+            background-color: #F7F6F1;
+            width: 15vw;
+            height: 3vmin;
+            font-size: 1.5vmin;
+            border: 0.5vmin double #043F45;
+            border-radius: 2vmin;
+            outline: #043F45;
+        }
+        
+
+        #entrar{
+            width: 6.5vmin;
+            font-size: 2vmin;
+            padding: 0.2vmin;
+            background-color: #043F45;
+            border-radius: 2vmin;
+            color: #F7F6F1;
+            border: 0;
+        }
+
+        #entrar:hover{
+            background-color: #F7F6F1;
+            border: 0.2vmin solid #043F45;
+            color: #043F45;
+        }
+
+        #rodape{
+            position: fixed;
+            width: 100vw;
+            background-color: #043F45;
+            font-size: 1.5vmin;
+            font-family: Geneva, Tahoma, sans-serif;
+            color: #F7F6F1;
+            text-align: center;
+            bottom: 0;
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="upperbar">
+            Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
+        </div>
+        
+            <img id="logo" src="../../Multimídia/Imagens/logo_blinked_11.png">
+    </header>
+    <main>
+        <div id="divlogin">
+            Login<br>
+            <!-- <form> -->
+                <input class="formatar" id="cpf" type="number" minlength="11" maxlength="11" placeholder="CPF" value="" style="height: 2vmin; font-size: 1.5vmin; outline: #043F45;"><br>
+                <input class="formatar" id="senha" type="password" placeholder="Senha" value="" style="height: 2vmin; font-size: 1.5vmin; outline: #043F45;"><br>
+                <button id="entrar" style="font-size: 2vmin;" onclick="verifica()">Entrar</button><br><br>
+            <!-- </form> -->
+        </div>
+    </main>
+    <footer>
+        <div id="rodape">
+            Exame Programação Web 1 - UNAERP - Powered by: Gabriel Jose da Silva dos Santos RA: 834846
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/*
+Aluno: Gabriel Jose da Silva dos Santos
+RA: 834846
+*/
+
+html, body {height: 100%;}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #90D8D2;
+}
+
+div.upperbar{
+    height: 3vmin;
+    margin: auto;
+    background-color: #043F45;
+    color: #F7F6F1;
+    font-size: 2vmin;
+    padding: 0.5vmin;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1vmin;
+} 
+
+#logo{
+    width: 55vw;
+    margin-left: 22.5vw;
+}
+
+button.bt1{
+    width: 6vmin;
+    font-size: 2vmin;
+    padding: 0.1vmin;
+    background-color: #90D8D2;
+    border-radius: 2vmin;
+    border: 0.3vmin solid #F7F6F1;
+}
+
+button.bt1:hover{
+    background-color: #F7F6F1;
+    border-radius: 2vmin;
+    border: 0.4vmin solid #90D8D2;
+}
+
+div.navbar{
+    background-color: #043F45;
+    color: #F7F6F1;
+    font-size: 1.8vmin;
+    font-family: Geneva, Tahoma, sans-serif;
+    padding: 0.5vmin;
+    text-align: center;
+}
+
+ul.navlist{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.navopt{
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1.5vw;
+    margin-left: 1.5vmin;
+    color: #F7F6F1;
+}
+
+li.navopt:hover{
+    background-color: #F7F6F1;
+    color: #043F45;
+    border-radius: 0.8vmin;
+    transition: 0.4s;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.conteudo{
+    background-color: #F7F6F1;
+    margin: auto;
+    margin-top: 2vmin;
+    width: 80vw;
+    font-family: Geneva, Tahoma, sans-serif;
+    padding: 1vmin;
+    border-radius: 1vmin;
+}
+
+div.titulo{
+    position: relative;
+    margin-top: 2vmin;
+    margin-bottom: 4vmin;
+    font-size: 3vmin;
+    text-align: center;
+    color: #043F45;
+}
+
+div.formulario{
+    color: #043f45;
+    width: 65vw;
+    margin: auto;
+    font-size: 2vmin;
+}
+
+input.input1{
+    height: 2vmin; 
+    width: 15vmin;
+    font-size: 1.5vmin;
+    border: 0.5vmin double #043F45;
+    border-radius: 2vmin;
+    outline: #043F45;
+}
+
+button.bt2{
+    padding: 0.5vmin;
+    font-size: 1.5vmin;
+    background-color: #043F45;
+    border-radius: 2vmin;
+    border: 0.3vmin solid #043F45;
+    color: #F7F6F1;
+}
+
+button.bt2:hover{
+    background-color: #90D8D2;
+    border: 0.3vmin solid #043F45;
+    color: #043F45;
+}
+
+table.table1, tr.tr1, th.th1, td.td1{
+    border: 1px solid #043F45;
+    border-collapse: collapse;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 2vmin;
+}
+
+div.rodape{
+    position: fixed;
+    width: 100vw;
+    background-color: #043F45;
+    font-size: 1.5vmin;
+    font-family: Geneva, Tahoma, sans-serif;
+    color: #F7F6F1;
+    text-align: center;
+    bottom: 0;
+}
+
