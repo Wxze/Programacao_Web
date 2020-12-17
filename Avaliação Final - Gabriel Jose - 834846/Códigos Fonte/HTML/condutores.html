@@ -1,11 +1,93 @@
+<!--
+    Aluno: Gabriel Jose da Silva dos Santos
+    RA: 834846
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blinked - Controle de multas</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/estrutura.css">
 </head>
 <body>
-    condutores
+    <header>
+        <div class="upperbar">
+            Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
+            <div style="display: inline;">
+                <button class="bt1" style="float: right;" onclick="sair()">Sair</button>
+            </div>
+        </div>
+        <img id="logo" src="../../Multimídia/Imagens/logo_blinked_169.png">
+
+        <hr style="background-color: #043F45; width: 100%; height: 0.5vmin; border: 0;">
+    </header>
+    
+    <nav>
+        <div class="navbar">
+            <ul class="navlist">
+                <a href="visualizarmultas.html"><li class="navopt">Consultar multas</li></a>
+                <a href="aplicarmulta.html"><li class="navopt">Aplicar multa</li></a>
+                <a href="condutores.html"><li class="navopt">Condutores</li></a>
+                <a href="veiculos.html"><li class="navopt">Veículos</li></a>
+                <a href="policiais.html"><li class="navopt">Policiais</li></a>
+                <a href="infracoes.html"><li class="navopt">Infrações</li></a>
+                <a href="recursos.html"><li class="navopt">Gerir recursos de multa</li></a>
+                <a href="resultadorecurso.html"><li class="navopt">Visualizar resultado de recurso</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="conteudo">
+            <div class="titulo">
+                Gerenciar condutores
+            </div>
+            <div class="formulario" style="text-align: center;">
+                <table class="table1" style="margin-left: auto; margin-right: auto;">
+                    <tr class="tr1">
+                        <th class="th1">CNH</th>
+                        <th class="th1">Nome</th>
+                        <th class="th1">Endereço</th>
+                        <th class="th1">CPF</th>
+                        <th class="th1">RG</th>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">19283746528</td>
+                        <td class="td1">Astolfo Chiqueta</td>
+                        <td class="td1">São Paulo, Rua Jakob Nielsen nº777</td>
+                        <td class="td1">123.456.789-01</td>
+                        <td class="td1">98.765.432-1</td>
+                        <td class="td1"><button class="bt2" onclick="alterarCondutor()">Alterar</button><button class="bt2" onclick="excluirCondutor()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">91827363219</td>
+                        <td class="td1">Gabriel Jose</td>
+                        <td class="td1">Serrana, Rua Custódio José n°465</td>
+                        <td class="td1">522.267.153-69</td>
+                        <td class="td1">21.777.513-5</td>
+                        <td class="td1"><button class="bt2" onclick="alterarCondutor()">Alterar</button><button class="bt2" onclick="excluirCondutor()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">45212346712</td>
+                        <td class="td1">Wesley Rodrigues</td>
+                        <td class="td1">Barueri, Rua Ingrid Mattos n°242</td>
+                        <td class="td1">321.654.987-10</td>
+                        <td class="td1">89.567.234-2</td>
+                        <td class="td1"><button class="bt2" onclick="alterarCondutor()">Alterar</button><button class="bt2" onclick="excluirCondutor()">Excluir</button></td>
+                    </tr>
+                </table>
+                <br><br><button class="bt2" onclick="adicionarCondutor()">Adicionar condutor</button>
+            </div>
+        </div><br><br>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            Exame Programação Web 1 & Engenharia de Software 2 - UNAERP - Powered by: Gabriel Jose da Silva dos Santos RA: 834846
+        </div>
+    </footer>
+    <script type="text/javascript" src="../JAVASCRIPT/geral.js"></script>
+    <script type="text/javascript" src="../JAVASCRIPT/gerenciar.js"></script>
 </body>
 </html>

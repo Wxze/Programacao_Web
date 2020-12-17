@@ -11,18 +11,16 @@
     <link type="text/css" rel="stylesheet" href="../CSS/estrutura.css">
 </head>
 <body>
-    <header>
-        <div class="upperbar">
-            Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
-            <div style="display: inline;">
-                <button class="bt1" style="float: right;" onclick="sair()">Sair</button>
-            </div>
+    <div class="upperbar">
+        Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
+        <div style="display: inline;">
+            <button class="bt1" style="float: right;" onclick="sair()">Sair</button>
         </div>
-        <img id="logo" src="../../Multimídia/Imagens/logo_blinked_169.png">
+    </div>
+    <img id="logo" src="../../Multimídia/Imagens/logo_blinked_169.png">
 
-        <hr style="background-color: #043F45; width: 100%; height: 0.5vmin; border: 0;">
-    </header>
-    
+    <hr style="background-color: #043F45; width: 100%; height: 0.5vmin; border: 0;">
+
     <nav>
         <div class="navbar">
             <ul class="navlist">
@@ -41,17 +39,15 @@
     <main>
         <div class="conteudo">
             <div class="titulo">
-                Aplicar Multa
+                Visualizar resultado de recurso
             </div>
-            <div class="formulario" id="formulario" style="text-align: center;">
-                <form>
-                    <input type="text"  value="" class="input1" id="placa" placeholder="Placa do Veículo" minlength="7"><br><br>
-                    Data: <input type="date" value="" class="input1" id="data" style="margin-right: 5vmin;">
-                    Hora: <input type="time" value="" class="input1" id="hora"><br><br>
-                    <input type="number" value="" class="input1" id="matricula" placeholder="Matrícula do policial" minlength="6"><br><br>
-                    <input type="number" value="" class="input1" id="infracao" placeholder="Código da infração" minlength="5"><br><br><br>
-                    <button value="" class="bt2" onclick="verifica()">Aplicar</button>
-                </form> 
+            <div class="formulario" style="text-align: center;">
+                <!-- <form> -->
+                    <input class="input1" id="cpf" type="number" minlength="11" maxlength="11" placeholder="CPF" value=""><br><br>
+                    <button class="bt2" onclick="consulta()">Consultar</button><br><br>
+                <!-- </form> -->
+                <div id="resultado" style="text-align: center;"><br>
+                </div><br><br>
             </div>
         </div><br><br>
     </main>
@@ -61,7 +57,8 @@
             Exame Programação Web 1 & Engenharia de Software 2 - UNAERP - Powered by: Gabriel Jose da Silva dos Santos RA: 834846
         </div>
     </footer>
+
     <script type="text/javascript" src="../JAVASCRIPT/geral.js"></script>
-    <script type="text/javascript" src="../JAVASCRIPT/aplicarmulta.js"></script>
+    <script type="text/javascript" src="../JAVASCRIPT/resultadorecurso.js"></script>
 </body>
 </html>

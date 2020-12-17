@@ -1,3 +1,6 @@
+    // Aluno: Gabriel Jose da Silva dos Santos
+    // RA: 834846
+
 function consulta(){
     var cpf = document.getElementById("cpf");
     cpfValor = cpf.value;

@@ -1,11 +1,111 @@
+<!--
+    Aluno: Gabriel Jose da Silva dos Santos
+    RA: 834846
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blinked - Controle de multas</title>
+    <link type="text/css" rel="stylesheet" href="../CSS/estrutura.css">
 </head>
 <body>
-    policiais
+    <header>
+        <div class="upperbar">
+            Seja bem vindo(a) ao Blinked, controle de multas em um piscar de olhos! 
+            <div style="display: inline;">
+                <button class="bt1" style="float: right;" onclick="sair()">Sair</button>
+            </div>
+        </div>
+        <img id="logo" src="../../Multimídia/Imagens/logo_blinked_169.png">
+
+        <hr style="background-color: #043F45; width: 100%; height: 0.5vmin; border: 0;">
+    </header>
+    
+    <nav>
+        <div class="navbar">
+            <ul class="navlist">
+                <a href="visualizarmultas.html"><li class="navopt">Consultar multas</li></a>
+                <a href="aplicarmulta.html"><li class="navopt">Aplicar multa</li></a>
+                <a href="condutores.html"><li class="navopt">Condutores</li></a>
+                <a href="veiculos.html"><li class="navopt">Veículos</li></a>
+                <a href="policiais.html"><li class="navopt">Policiais</li></a>
+                <a href="infracoes.html"><li class="navopt">Infrações</li></a>
+                <a href="recursos.html"><li class="navopt">Gerir recursos de multa</li></a>
+                <a href="resultadorecurso.html"><li class="navopt">Visualizar resultado de recurso</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="conteudo">
+            <div class="titulo">
+                Gerenciar policiais
+            </div>
+            <div class="formulario" style="text-align: center;">
+                <table class="table1" style="margin-left: auto; margin-right: auto;">
+                    <tr class="tr1">
+                        <th class="th1">Matricula</th>
+                        <th class="th1">Nome</th>
+                        <th class="th1">Patente</th>
+                        <th class="th1">Data de admissão</th>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">17362-1</td>
+                        <td class="td1">André Guttierrez</td>
+                        <td class="td1">Cabo</td>
+                        <td class="td1">12/12/2017</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">34312-5</td>
+                        <td class="td1">Fernando Silva</td>
+                        <td class="td1">1° Tenente</td>
+                        <td class="td1">18/06/2019</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">64739-3</td>
+                        <td class="td1">Natasha Karanicolau</td>
+                        <td class="td1">Major</td>
+                        <td class="td1">07/08/2008</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">32811-5</td>
+                        <td class="td1">Filipe Moreno</td>
+                        <td class="td1">Coronel</td>
+                        <td class="td1">23/03/2011</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">99297-8</td>
+                        <td class="td1">Pablo Bianchinni</td>
+                        <td class="td1">2° Tenente</td>
+                        <td class="td1">05/03/2020</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">72629-5</td>
+                        <td class="td1">Lincoln Lau</td>
+                        <td class="td1">Cabo</td>
+                        <td class="td1">12/12/2017</td>
+                        <td class="td1"><button class="bt2" onclick="alterarPolicial()">Alterar</button><button class="bt2" onclick="excluirPolicial()">Excluir</button></td>
+                    </tr>
+                    
+                </table>
+                <br><br><button class="bt2" onclick="adicionarPolicial()">Adicionar condutor</button>
+            </div>
+        </div><br><br>
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            Exame Programação Web 1 & Engenharia de Software 2 - UNAERP - Powered by: Gabriel Jose da Silva dos Santos RA: 834846
+        </div>
+    </footer>
+    <script type="text/javascript" src="../JAVASCRIPT/geral.js"></script>
+    <script type="text/javascript" src="../JAVASCRIPT/gerenciar.js"></script>
 </body>
 </html>
