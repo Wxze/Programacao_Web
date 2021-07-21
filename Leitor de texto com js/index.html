@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de texto - Powered by: Gabriel Jose, 2021</title>
+    <style>
+
+        *:focus{
+            outline: none;
+        }
+
+        .line-default{
+            margin: 0;
+            height: 0.5vmin;
+            margin-top: 1vmin;
+            margin-bottom: 1vmin;
+        }
+
+        #inp-default{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50vmin;
+            height: 3vmin;
+            margin-top: 4vmin;
+            margin-bottom: 2vmin;
+            border-radius: 1.2vmin;
+        }
+
+        #but-default{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vmin;
+            margin-bottom: 5vmin;
+            font-size: 1.8vmin;
+            border-radius: 1vmin;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 0.7vmin;
+            transition: 0.3s;
+        }
+
+        #but-default:hover{
+            background-color: steelblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <hr color="black" class="line-default">
+    <h1 style="text-align: center; font-size: 4vmin;">Insira um texto qualquer</h1>
+    <input id="inp-default" type="text">
+    <input id="but-default" type="button" value="Ler meu texto" onclick=ler()>
+    <hr color="black" class="line-default">
+</body>
+<script type="text/javascript" src="leitor.js"></script>
+</html>
